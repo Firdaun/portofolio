@@ -1,0 +1,323 @@
+/* all */
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(228, 137, 244);
+}
+
+/* navbar */
+.div-utama {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+navbar {
+    background-color: #ffffff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    border-radius: 0 0 15px 15px;
+}
+
+navbar .div-utama {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.nav-links a:hover {
+    color: rgb(228, 137, 244);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+}
+
+/* section-image */
+.div-utama img {
+    width: 70%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* fitur */
+.features {
+    padding: 4rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(228, 137, 244);
+}
+
+.fitur {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.fitur-kartu {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fitur-kartu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fitur-logo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    margin-bottom: 3rem;
+}
+
+/* footer */
+.footer {
+    background-color: #f7f7f7;
+    color: #fff;
+    padding: 1rem 0 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #949494;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #706f6f;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: red;
+}
+
+.footer-section p {
+    color: #706f6f;
+}
+
+.footer .copyright {
+    text-align: center;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* skill */
+.skill {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.skill h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skill-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.skill-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* tentang aku */
+.perkenalan {
+    background-color: #f7f9fc;
+    padding: 4rem 0;
+}
+
+.tentang {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.perkenalan-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.perkenalan-text {
+    flex: 1;
+}
+
+.perkenalan-text h2 {
+    font-size: 2rem;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 2.5rem;
+}
+
+.perkenalam-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* video */
+video {
+    width: 70%;
+    max-width: 100%;
+    margin-bottom: 30rem;
+    border-radius: 15px;
+}
+.div-video {
+    text-align: center;
+    margin: 5rem;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        background-color: #fff;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+
+        /* animasi */
+        opacity: 0;
+        transform: translateY(-29px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .div-utama img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .footer-content {
+        gap: 0px;
+    }
+
+    /* perkenalan */
+    .tentang {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perkenalan-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* video */
+    video {
+        width: 100%;
+    }
+}
